@@ -18,6 +18,7 @@ public class UsoEmpleados {
 		
 		System.out.println(Ana.sueldo());
 		
+		// Que cosas
 		
 		
 
