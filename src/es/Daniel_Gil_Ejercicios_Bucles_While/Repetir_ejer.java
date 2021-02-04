@@ -1,4 +1,4 @@
-package es;
+package es.Daniel_Gil_Ejercicios_Bucles_While;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Repetir_ejer {
 		// TODO Auto-generated method stub
 		
 		Scanner entrada = new Scanner(System.in);// Iniciamos la sentencia para luego poder preguntar
-		int aleatorio = (int)(Math.random()+100);// Fórmula para poder realizar números aleatorios
+		int aleatorio = (int)(Math.random()+100);// Fï¿½rmula para poder realizar nï¿½meros aleatorios
 		int intentos = 0;
 		int numero = 0;
 		
@@ -18,17 +18,17 @@ public class Repetir_ejer {
 			numero=entrada.nextInt();
 			if (aleatorio > numero) {
 				intentos++;
-				System.out.println("El número es menor que el aleatorio");
+				System.out.println("El nï¿½mero es menor que el aleatorio");
 			}else if (aleatorio<numero) {
 				intentos++;
-				System.out.println("El número es mayor que el aleatorio");
+				System.out.println("El nï¿½mero es mayor que el aleatorio");
 
 				
 			}
 			
 		}
 		
-		System.out.println("Este es el número BRAVO!!! " + "has logrado en" + intentos );
+		System.out.println("Este es el nï¿½mero BRAVO!!! " + "has logrado en" + intentos );
 
 	}
 

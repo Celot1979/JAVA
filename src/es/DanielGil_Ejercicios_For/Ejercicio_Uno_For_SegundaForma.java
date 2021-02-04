@@ -14,12 +14,14 @@ public class Ejercicio_Uno_For_SegundaForma {
 		
 		for(int i= 0; i<pass.length();i++) {
 			//System.out.println(i);
-			int arroba=0;
+			int arroba = 0;
 			if(pass.charAt(i)==0)arroba++;	
 	}
 		
 		if (arroba == 1) {
 			System.out.println(pass);
+		}else {
+			System.out.println("Error en el sistema");
 		}
 
 }
