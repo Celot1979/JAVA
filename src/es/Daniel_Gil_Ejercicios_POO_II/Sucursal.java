@@ -8,11 +8,11 @@ public class Sucursal {
 	}
 	
 	public String getNumero_sucursal() {
-		return "El número de la sucursal es: " + numero_sucursal;
+		return "El nï¿½mero de la sucursal es: " + numero_sucursal;
 	}
 	
 	public String getdireccion() {
-		return "La dirección es: " + direccion;
+		return "La direcciï¿½n es: " + direccion;
 		
 	}
 	
@@ -22,10 +22,12 @@ public class Sucursal {
 	}
 	
 	public void setPrecio(String paquete, int prioridad) {
-		paquete =paquete;
-		switch(this.prioridad) {
+		paquete = paquete;
+		switch(prioridad) {
 		case 1:
 			prioridad = 1;
+		case 2:
+			prioridad = 2;
 		
 		}
 			

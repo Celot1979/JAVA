@@ -29,6 +29,15 @@ class Clase2 extends Clase1{
 	
 }
 
+/*
+ * Para hacer que una jerarquia se rompa en un punto concreto, y que ele resto de clases
+ * no hereden de ella, se debe usar la palabra reservada - Final_- antes de la que deseamos
+ * proeger de heredar. EJ:
+ * final class Calse3 extends Clase2{
+ *       public void metodo3(){
+ *       }}
+ */
+
 class Clase3 extends Clase2{
      public void metodo3() {
 		

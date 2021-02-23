@@ -6,6 +6,8 @@ import javax.swing.JOptionPane;
 
 public class Ejercicio_Uno_For_SegundaForma {
 
+	private static int arroba;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String pass = JOptionPane.showInputDialog("Introduccce tu contraseña");
@@ -17,6 +19,7 @@ public class Ejercicio_Uno_For_SegundaForma {
 			int arroba = 0;
 			if(pass.charAt(i)==0)arroba++;	
 	}
+		
 		
 		if (arroba == 1) {
 			System.out.println(pass);

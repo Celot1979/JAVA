@@ -11,7 +11,7 @@ public class Colegio {
 	
 	
 	public String getNombreColegio() {
-		return Nombre;
+		return nombre;
 	}
 	
 	private Alumno getAlumno(int nAlumno) {

@@ -1,4 +1,4 @@
-package es.Daniel_Gi.Libro_Java_I;
+package es.Daniel_Gil_Libro_Java_I;
 
 public class Generar_Caracteres_Aleatorios {
 
