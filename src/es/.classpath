@@ -2,5 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="DanielGil_Flujo"/>
+	<classpathentry kind="src" path="Daniel_Gil_Ejercicios_POO_III"/>
+	<classpathentry kind="src" path="Daniel_Gil_Ejercicios_Condicionales"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
