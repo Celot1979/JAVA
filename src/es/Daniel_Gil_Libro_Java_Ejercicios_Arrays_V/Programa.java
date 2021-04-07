@@ -7,8 +7,16 @@ public class Programa {
 		
 		Operaciones t = new Operaciones();
 		//t.mostrarArrays();
-		t.Negativos();
-		t.Positivos();
+		System.out.println(t);
+		System.out.println(t.Arreglos_Positivos());
+		System.out.println(t.Arreglos_Positivos());
+		System.out.println(t.setSuma_Positivos());
+		System.out.println(t.getSumar_Positivos());
+		
+		
+		System.out.println(t.setSuma_Negativos());
+		System.out.println(t.getSumar_Negativos());
+
 
 	}
 

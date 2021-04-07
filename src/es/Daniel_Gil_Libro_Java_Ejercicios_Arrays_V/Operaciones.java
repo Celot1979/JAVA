@@ -4,64 +4,92 @@ import java.util.Scanner;
 
 public class Operaciones {
 	public Operaciones() {
-		
-		
-		numeros = new int[10];
-		numeros_negativos= new int[10];
-		numeros_positivos= new int[10];
-		
-		for (int i =0; i < numeros.length;i++) {
-			Scanner n = new Scanner(System.in);
-			System.out.println("Introduce 10 números: ");
-			int num = n.nextInt();
-			numeros[i]= num;
-			if (num < 0){
-				this.numeros_negativos[i]= num;
-			}else {
-				this.numeros_positivos[i]= num;
+		for(int i = 0; i <10;i++) {
+			Scanner entrada = new Scanner(System.in);
+			System.out.println("Introduzca 10 número:");
+			int number = entrada.nextInt();
+			if (number < 0) {
+				numeros_negativos[i] = number;
+				
+			}else if(number > 0){
+				numeros_positivos[i]= number;
 			}
+			}
+	}
+			
+			
+		
+
+	
+	
+	public String Arreglos_Positivos() {
+		int posicion= 1;
+		for (int j = 0; j < numeros_positivos.length; j++) {
+			//System.out.println("El numero que has introduccido es: " + numeros_positivos[j] + " en la posicion: " + posicion);
+			posicion ++;
+		}
+		
+		
+		return "####### Estos son los Positivos ########";
+		
+	}
+	
+	
+	public String Arreglos_Negativoss() {
+		int posicion= 1;
+		for (int j = 0; j < numeros_negativos.length; j++) {
+			//System.out.println("El numero que has introduccido es: " + numeros_negativos[j] + " en la posicion: " + posicion);
+			posicion ++;
+		}
+		
+		
+		return "####### Estos son los Negativos ########";
+		
+	}
+	
+	
+	public boolean setSuma_Positivos() {
+		for(int k = 0; k < numeros_positivos.length; k ++) {
+			sumar_positivos+= numeros_positivos[k];
+		}
+		return false;
+	}
+	
+	public String getSumar_Positivos() {
+		return "La suma de los números positivos son: " + sumar_positivos;
+	}
+	
+	public boolean setSuma_Negativos() {
+		for(int k = 0; k < numeros_negativos.length; k ++) {
+			elemento = 0;
+			resultado = 0;
+			
+			resultado = elemento - numeros_negativos[k];
+			
 			
 		}
-		
-		
-		
+		return false;
 	}
 	
-	
-	public void mostrarArrays() {
-		
-		int posicion  =0;
-		for(int j = 0; j < numeros.length; j++) {
-			posicion = j;
-			System.out.println("Elemento de array : " +numeros[j] + " indice : "+ posicion);
-		}
-	}
-	
-	public void Negativos() {
-		int posicion2= 0;
-		for(int j = 0; j < numeros_negativos.length; j++) {
-			posicion2 = j;
-			System.out.println("Los elementos del array negativos son: " +numeros_negativos[j] + " indice : "+ posicion2);
-		}
-		
-	}
-	
-	
-	public void Positivos() {
-		int posicion3= 0;
-		for(int j = 0; j < numeros_positivos.length; j++) {
-			posicion3 = j;
-			System.out.println("Los elementos del array positivo son: " +numeros_positivos[j] + " indice : "+ posicion3);
-		}
-		
+	public String getSumar_Negativos() {
+		return "La suma de los números negativos son: " + numeros_negativos + resultado;
 	}
 	
 	
 	
 	
 	
-	private int numeros[];
-	private int numeros_negativos[];
-	private int numeros_positivos[];
-
+	
+	
+	
+	//Propiedades
+	private int numeros[] = new int [10];
+	private int numeros_negativos[] = new int [10];
+	private int numeros_positivos[] = new int [10];
+	private int sumar_positivos;
+	private int sumar_negativos;
+	private int elemento;
+	private int resultado;
+	
+	
 }
