@@ -1,4 +1,4 @@
-package es.DanielGil.POO.HerenciaVII_Clases_Internas_Local;
+package es.DanielGil.POO.HerenciaVII_Clases_Internas_Anonima;
 
 import java.awt.Toolkit;
 import java.awt.event.*;
@@ -23,7 +23,7 @@ class Reloj{
 	
 	public void ejecutarTemporizador(int intervalo, boolean sonido) {
 		
-		 /*class DameLaHora implements ActionListener {
+		 class DameLaHora implements ActionListener {
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -41,20 +41,9 @@ class Reloj{
 		
 		
 		
-		ActionListener oyente = new DameLaHora();*/
+		ActionListener oyente = new DameLaHora();
 		
-		Timer miTemporizador = new Timer(intervalo, new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-				Date ahora = new Date();
-				System.out.println("Te pongo la hora cada tres segundos" + ahora);
-				
-				if (sonido) Toolkit.getDefaultToolkit().beep();
-			}
-			
-		});
+		Timer miTemporizador = new Timer(intervalo, oyente);
 		miTemporizador.start();
 	}
 	
