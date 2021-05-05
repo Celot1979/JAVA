@@ -21,13 +21,34 @@ class MarcoTexto extends JFrame{// Crear ventana
 		setTitle("Escritura en JFrame");
 		setVisible(true);
 		
-		PrimerPanel milamina = new PrimerPanel();
-		add(milamina);
+		/*PrimerPanel milamina = new PrimerPanel();
+		add(milamina);*/
+		add(new JPanel(){
+			public void paintComponent(Graphics g) {
+				super.paintComponent(g);// Esto se hace para llamar al paintComponet de la clase padre(JPanle).
+				// Si no sería sobreescribirlo y el comportamiento del método sería diferente.
+				
+				
+				// Esta opción es para determinar el color que tendrá el texto
+				
+				
+				g.setColor(new Color(153,153,255));
+				
+				// Cambiar el tipo de letra
+				
+				g.setFont(new Font("Verdana", Font.BOLD, 24));
+				
+				//Para escribir en la lámina
+				g.drawString("Primer Panel", 200, 200);
+			}
+			
+			
+		});
 	}
 	
 }
 
-class PrimerPanel extends JPanel{// Crear Lamina o contenedor
+/*class PrimerPanel extends JPanel{// Crear Lamina o contenedor
 	
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);// Esto se hace para llamar al paintComponet de la clase padre(JPanle).
@@ -46,5 +67,5 @@ class PrimerPanel extends JPanel{// Crear Lamina o contenedor
 		//Para escribir en la lámina
 		g.drawString("Primer Panel", 200, 200);
 	}
-}
+}*/
 
