@@ -62,9 +62,7 @@ class LaminaDibujos extends JPanel{
 		
 		g2.draw(rectangulo);
 		
-		g2.setPaint(java.awt.Color.RED);
 		
-		g2.fill(rectangulo);
 		
 	}
 }
